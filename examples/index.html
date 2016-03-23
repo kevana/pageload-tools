@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <script>
+        console.log('header script', performance.timing.toJSON())
+        /* Example
+        var timing = {
+            navigationStart: 1458615504743
+            unloadEventStart: 1458615504754
+            unloadEventEnd: 1458615504755
+            redirectStart: 0
+            redirectEnd: 0
+            fetchStart: 1458615504743
+            domainLookupStart: 1458615504751
+            domainLookupEnd: 1458615504751
+            connectStart: 1458615504751
+            connectEnd: 1458615504752
+            secureConnectionStart: 0
+            requestStart: 1458615504752
+            responseStart: 1458615504752
+            responseEnd: 1458615504754
+            domLoading: 1458615504763
+            domInteractive: 0
+            domContentLoadedEventStart: 0
+            domContentLoadedEventEnd: 0
+            domComplete: 0
+            loadEventStart: 0
+            loadEventEnd: 0
+        }
+        */
+    </script>
+    <meta charset="utf-8">
+    <title>Example</title>
+</head>
+
+<body>
+<h1>Example</h1>
+<script>
+    'use strict'
+    console.log('inline script', performance.timing.toJSON())
+    /*
+    var timing = {
+        navigationStart: 1458614642322
+        unloadEventStart: 1458614642332
+        unloadEventEnd: 1458614642332
+        redirectStart: 0
+        redirectEnd: 0
+        fetchStart: 1458614642322
+        domainLookupStart: 1458614642329
+        domainLookupEnd: 1458614642329
+        connectStart: 1458614642329
+        connectEnd: 1458614642330
+        secureConnectionStart: 0
+        requestStart: 1458614642330
+        responseStart: 1458614642331
+        responseEnd: 1458614642332
+        domLoading: 1458614642340
+        domInteractive: 0
+        domContentLoadedEventStart: 0
+        domContentLoadedEventEnd: 0
+        domComplete: 0
+        loadEventStart: 0
+        loadEventEnd: 0
+    }
+    */
+</script>
+<script src="index.js"></script>
+</body>
+</html>
