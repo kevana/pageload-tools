@@ -1,7 +1,7 @@
 {
   "name": "pageload-tools",
   "version": "0.0.3",
-  "description": "Tools to help you do things based on how pageload went for the user",
+  "description": "Tools to help you change site behavior based on pageload metrics",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",

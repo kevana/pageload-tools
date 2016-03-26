@@ -1,8 +1,6 @@
 # Pageload tools
 
-Tools to help you change site behavior based on pageload metrics
-
-This is a collection of convenience methods for the [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API)
+Tools to help you change site behavior based on pageload metrics. This is a collection of convenience methods for the [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API)
 
 ## Usage
 ```
