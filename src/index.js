@@ -2,6 +2,10 @@ function connectTime() {
   return window.performance.timing.connectEnd - window.performance.timing.connectStart
 }
 
+function dnsTime() {
+  return window.performance.timing.domainLookupEnd - window.performance.timing.domainLookupStart
+}
+
 function loadTime() {
   const loadEventEnd = window.performance.timing.loadEventEnd
   if (loadEventEnd === 0) {
@@ -13,5 +17,6 @@ function loadTime() {
 
 export default {
   connectTime,
+  dnsTime,
   loadTime,
 }

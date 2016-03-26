@@ -9,6 +9,8 @@ global.window = {
       navigationStart: 1458615504743,
       connectStart: 1458615504751,
       connectEnd: 1458615504763,
+      domainLookupStart: 1459032265695,
+      domainLookupEnd: 1459032265731,
       loadEventEnd: 1458615504793,
     },
   },
@@ -17,6 +19,11 @@ global.window = {
 describe('connectTime()', () => {
   it('should get connection time', () => {
     expect(pageloadTools.connectTime()).toBe(12)
+  })
+})
+describe('dnsTime()', () => {
+  it('should get connection time', () => {
+    expect(pageloadTools.dnsTime()).toBe(36)
   })
 })
 describe('loadTime()', () => {
