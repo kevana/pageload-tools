@@ -1,6 +1,6 @@
 {
   "name": "pageload-tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tools to help you do things based on how pageload went for the user",
   "main": "lib/index.js",
   "scripts": {
