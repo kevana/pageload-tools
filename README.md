@@ -21,13 +21,15 @@ or:
 ```
 var pageloadTools = require('pageload-tools');
 ```
-Then you can
+Then you can change behavior of your site:
 ```
-console.log('Total pageload time:', pageloadTools.loadTime());
-if (pageloadTools.loadTime() > 5000) {
-    // change behavior based on perceived load speed for the user.
-    alert('Pageload was really slow, sorry!')
-}
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log('Total pageload time:', pageloadTools.loadTime());
+  if (pageloadTools.loadTime() > 5000) {
+      alert('Pageload was really slow, sorry!')
+      // disable heavy ajax features, preload data, etc.
+  }
+});
 ```
 
 ## API
